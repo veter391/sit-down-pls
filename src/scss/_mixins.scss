@@ -1,0 +1,55 @@
+@mixin ghost {
+  &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  }
+}
+
+@mixin border-container {
+  display: block;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+@mixin container-card {
+  display: block;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+      @content;
+  }
+  @-moz-keyframes #{$animationName} {
+      @content;
+  }
+  @-o-keyframes #{$animationName} {
+      @content;
+  }
+  @keyframes #{$animationName} {
+      @content;
+  }
+}
+
+@mixin animation($animate...) {
+  $max: length($animate);
+  $animations: '';
+  @for $i from 1 through $max {
+      $animations: #{$animations + nth($animate, $i)};
+      @if $i < $max {
+          $animations: #{$animations + ", "};
+      }
+  }
+  -webkit-animation: $animations;
+  -moz-animation: $animations;
+  -ms-animation: $animations;
+  animation: $animations;
+}
+
+

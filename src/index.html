@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SitDownPls Furniture hypermarket with inexpensive cabinet and upholstered furniture. Best Price Guaranteed.">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" sizes="192x192" />
+    <title>SitDownPls</title>
+    <!-- fonts -->
+    <link rel="preload" href="fonts/opensans-bold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensans-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensans-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/playfairdisplay-black-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- CSS libraries -->
+    <link rel="stylesheet" href="libraries/swiper.min.css">
+    <!-- mi css -->
+    <link rel="stylesheet" href="style.min.css">
+    <!-- JS libraries -->
+    <script defer src="libraries/focus-visible.min.js"></script>
+    <script defer src="libraries/modernizr-custom.js"></script>
+    <script defer src="libraries/swiper.min.js"></script>
+    <script defer src="libraries/jquery.min.js"></script>
+    <script defer src="libraries/inputmask.min.js"></script>
+    <script defer src="libraries/just-validate.min.js"></script>
+    <script defer src="libraries/choices.min.js"></script>
+    <script defer src="libraries/lazyload.min.js"></script>
+
+
+    <!-- mi script -->
+
+    <script defer src="script.js"></script>
+  </head>
+	<!-- Отображаемое тело страницы -->
+  <body>
+    <!-- Preload-->
+    <div id="preloader_preload"></div>
+    <!-- Оболочка (grid-контейнер) -->
+    <div id="wrapper" class="wrapper">
+      <h1 class="visually-hidden">
+        магазин мебели
+      </h1>
+        <!-- Шапка (grid - элемент) -->
+        <header class="header grid-box">
+          <div class="header__top grid-box padding-box">
+            <div class="header__container">
+              <picture class="header__logo header__logo-top">
+                <source srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
+                <img class="header__logo-img header__logo-img-top" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="логотип">
+              </picture>
+
+              <div class="header__select-box">
+                <div class="header__my-select">
+                  <label id="label-select" class="label-select">Ваш регион:</label>
+                  <select class="custom-select" name="header__select" id="header__select" aria-labelledby="label-select">
+                    <option class="header__opinion selection" value="Москва">Москва</option>
+                    <option class="header__opinion" value="Казань">Казань</option>
+                    <option class="header__opinion" value="Уфа">Уфа</option>
+                    <option class="header__opinion" value="Пермь">Пермь</option>
+                  </select>
+                </div>
+
+                <span class="header__phone-focus ">
+                  <a class="header__phone" href="tel:+74958854547" aria-label="номер телефона">
+                    <svg width="17px" height="17px" class="header__phone-icon" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                    +7 (495) 885-45-47
+                  </a>
+                </span>
+              </div>
+
+              <ul class="header__top-list">
+                <li class="header__top-item">
+                  <a class="header__top-link" href="#">О компании</a>
+                </li>
+
+                <li class="header__top-item">
+                  <a class="header__top-link" href="#">Гарантия и возврат</a>
+                </li>
+
+                <li class="header__top-item">
+                  <a class="header__top-link" href="#">Корпоративным клиентам</a>
+                </li>
+
+                <li class="header__top-item">
+                  <a class="header__top-link" href="#">Дизайн-решение</a>
+                </li>
+
+                <li class="header__basket header__top-basket">
+                    <a class="header__user-link" href="#" aria-label="пользователь">
+                      <svg width="26px" height="28px" class="header__user-icon" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#user"></use>
+                      </svg>
+                    </a>
+
+                    <a class="header__basket-link" href="#" aria-label="корзина">
+                      <div class="header__basket-counter">0</div>
+
+                      <svg width="30px" height="28px" class="header__basket-icon" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#basket"></use>
+                      </svg>
+                    </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="burgerdown">
+              <div class="burgerdown__contet">
+                <ul class="burgerdown__list">
+                    <li class="burgerdown__item">
+                      <a class="burgerdown__link header__scrollTop" href="#top-category">
+                        Каталог
+                      </a>
+                    </li>
+
+                    <li class="burgerdown__item">
+                      <a class="burgerdown__link" href="#">
+                        Магазины
+                      </a>
+                    </li>
+
+                    <li class="burgerdown__item">
+                      <a class="burgerdown__link" href="#">
+                        Шоу-рум
+                      </a>
+                    </li>
+
+                    <li class="burgerdown__item">
+                      <a class="burgerdown__link" href="#">
+                        Доставка и оплата
+                      </a>
+                    </li>
+
+                    <li class="burgerdown__item">
+                      <a class="burgerdown__link" href="#">
+                        Дисконт
+                      </a>
+                    </li>
+
+                    <li class="burgerdown__item">
+                      <a class="burgerdown__link" href="contacts.html">
+                        Контакты
+                      </a>
+                    </li>
+                </ul>
+
+                <picture class="burgerdown__picture">
+                  <source srcset="#" data-srcset="img/elephant.webp 1x, img/elephant@2x.webp 2x" type="image/webp">
+                  <img class="lazy burgerdown__img" src="#" data-src="img/elephant.jpg" data-srcset="img/elephant.jpg 1x, img/elephant@2x.jpg 2x" alt="логотип">
+                </picture>
+              </div>
+
+              <div class="burgerdown__bottom">
+                <ul class="burgerdown__bottom-list">
+                  <li class="burgerdown__bottom-item">
+                    <a class="burgerdown__bottom-link" href="#">О компании</a>
+                  </li>
+
+                  <li class="burgerdown__bottom-item">
+                    <a class="burgerdown__bottom-link" href="#">Гарантия и возврат</a>
+                  </li>
+
+                  <li class="burgerdown__bottom-item">
+                    <a class="burgerdown__bottom-link" href="#">Корпоративным клиентам</a>
+                  </li>
+
+                  <li class="burgerdown__bottom-item">
+                    <a class="burgerdown__bottom-link" href="#">Дизайн-решение</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="header__center">
+            <button class="burger" aria-label="бургер">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+
+            <picture class="header__logo">
+              <source srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
+              <img class="header__logo-img" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="логотип">
+            </picture>
+
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a class="header__nav-link header__scrollTop" href="#top-category">
+                    Каталог
+                  </a>
+                </li>
+
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">
+                    Магазины
+                  </a>
+                </li>
+
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">
+                    Шоу-рум
+                  </a>
+                </li>
+
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">
+                    Доставка и оплата
+                  </a>
+                </li>
+
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">
+                    Дисконт
+                  </a>
+                </li>
+
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="contacts.html">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header__basket header__center-basket">
+              <a class="header__user-link" href="#" aria-label="пользователь">
+                <svg width="26px" height="28px" class="header__user-icon" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#user"></use>
+                </svg>
+              </a>
+
+              <a class="header__basket-link" href="#" aria-label="корзина">
+                <div class="header__basket-counter">0</div>
+
+                <svg width="30px" height="28px" class="header__basket-icon" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="header__bottom">
+            <div class="header__form-box">
+              <form class="header__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                <input id="search" name="search" class="header__form-input" type="text" placeholder="Я хочу купить..." aria-label="форма поиска">
+
+                <button class="header__form-btn" type="submit" aria-label="Поиск">
+                  <svg width="12px" height="12px" class="my-icon my-icon-arrow" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#arrowRight"></use>
+                  </svg>
+                </button>
+
+                <label for="search" class="header__form-search" aria-label="Поиск label">
+                    <svg width="16px" height="16px" class="my-icon" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                </label>
+              </form>
+
+              <div class="header__dropdown-box">
+                <button class="header__dropdown" aria-label="Категория dropdown">
+                  Категория
+                  <svg width="12px" height="12px" class="header__dropdown-icon" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#arrowBottom"></use>
+                  </svg>
+                </button>
+
+                <ul class="header__dropdown-list">
+                  <li class="header__dropdown-item">
+                    <a href="#" class="header__dropdown-link">
+                      Диваны
+                    </a>
+                  </li>
+
+                  <li class="header__dropdown-item">
+                    <a href="#" class="header__dropdown-link">
+                      Комоды
+                    </a>
+                  </li>
+
+                  <li class="header__dropdown-item">
+                    <a href="#" class="header__dropdown-link">
+                      Кресла
+                    </a>
+                  </li>
+
+                  <li class="header__dropdown-item">
+                    <a href="#" class="header__dropdown-link">
+                      Стулья
+                    </a>
+                  </li>
+
+                  <li class="header__dropdown-item">
+                    <a href="#" class="header__dropdown-link">
+                      Пуфы
+                    </a>
+                  </li>
+
+                  <li class="header__dropdown-item">
+                    <a href="#" class="header__dropdown-link">
+                      Столы
+                    </a>
+                  </li>
+
+                  <li class="header__dropdown-item">
+                    <a href="#" class="header__dropdown-link">
+                      Кровати
+                    </a>
+                  </li>
+
+                  <li class="header__dropdown-item">
+                    <a href="#" class="header__dropdown-link">
+                      Аксессуары
+                    </a>
+                  </li>
+
+                  <li class="header__dropdown-item">
+                    <a href="#" class="header__dropdown-link">
+                      Тумбы
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="header__basket">
+              <a class="header__user-link" href="#" aria-label="пользователь">
+                <svg width="26px" height="28px" class="header__user-icon" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#user"></use>
+                </svg>
+              </a>
+
+              <a class="header__basket-link" href="#" aria-label="корзина">
+                <div class="header__basket-counter">0</div>
+
+                <svg width="30px" height="28px" class="header__basket-icon" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+        </header>
+        <!-- Контент (grid-элемент) -->
+        <main class="main">
+            <!-- Контент (grid-элемент + grid-контейнер) -->
+            <section class="section hero">
+              <!-- Slider main container -->
+              <div class="swiper grid-box hero__swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper hero__wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide grid-box hero__slide">
+                    <div class="hero__content">
+                      <h2 class="hero__title">
+                        Скидка 15% на первую покупку
+                      </h2>
+
+                      <button class="hero__btn btn">
+                        Получить!
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide grid-box hero__slide">
+                    <div class="hero__content">
+                      <h2 class="hero__title">
+                        1000+ аксессуаров для дома
+                      </h2>
+
+                      <button class="hero__btn btn">
+                        Получить!
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide grid-box hero__slide">
+                    <div class="hero__content">
+                      <h2 class="hero__title">
+                        Коллекция стильного и&nbsp;яркого&nbsp;текстиля
+                      </h2>
+
+                      <button class="hero__btn btn">
+                        Получить!
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination hero__pagination"></div>
+              </div>
+            </section>
+
+            <section class="section grid-box offer">
+              <div class="swiper offer__swiper">
+                <div class="swiper-box-top">
+                  <h2 class="title">
+                    Специальные предложения
+                  </h2>
+
+                  <div class="swiper-box-btn-container">
+                    <div class="swiper-button-prev swiper-box-btn-prev">
+                      <svg width="12px" height="12px" class="swiper-box-icon">
+                        <use xlink:href="img/sprite.svg#arrowLeft"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-button-next swiper-box-btn-next">
+                      <svg width="12px" height="12px" class="swiper-box-icon">
+                        <use xlink:href="img/sprite.svg#arrowRight"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- Additional required wrapper -->
+                <section class="swiper-wrapper offer__wrapper">
+                  <h2 class="visually-hidden">
+                    Скидки
+                  </h2>
+                  <!-- Slides -->
+                  <article class="card card_offer swiper-slide">
+                    <div class="card__discount">
+                      - 9 000
+                    </div>
+
+                    <picture class="card__offer-picture">
+                      <source srcset="img/offer-1.webp 1x, img/offer-1@2x.webp 2x" type="image/webp">
+                      <img class="card__offer-img" src="img/offer-1.png" srcset="img/offer-1.png 1x, img/offer-1@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <h3 class="card__title card__title_margin_bottom">
+                      <a href="#">
+                        Кресло велюровое “X&#8209;24”
+                      </a>
+                    </h3>
+
+                    <div class="card__price-box">
+                      <span class="card__price card__price_new">15 990 руб</span>
+                      <span class="card__price card__price_old">24 990 руб</span>
+                    </div>
+
+                    <button class="card-btn card-btn-offer" data-code="X&#8209;24">
+                      Купить
+                    </button>
+                  </article>
+
+                  <article class="card card_offer card_offer_center swiper-slide">
+                    <div class="card__discount">
+                      - 10 000
+                    </div>
+
+                    <picture class="card__offer-picture">
+                      <source srcset="img/offer-2-1024.webp 1x, img/offer-2-1024@2x.webp 2x" type="image/webp" media="(max-width: 1024px)">
+                      <source srcset="img/offer-2-1024.png 1x, img/offer-2-1024@2x.png 2x" type="image/png" media="(max-width: 1024px)">
+                      <source srcset="img/offer-2.webp 1x, img/offer-2@2x.webp 2x" type="image/webp">
+                      <img class="card__offer-img card__offer-img_center" src="img/offer-2.png" srcset="img/offer-2.png 1x, img/offer-2@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <picture class="card-sofa">
+                      <source srcset="#" data-srcset="img/offer-sofa1.webp 1x, img/offer-sofa1@2x.webp 2x" type="image/webp">
+                      <img class="lazy card-sofa-img" src="#" data-src="img/offer-sofa1.png" data-srcset="img/offer-sofa1.png 1x, img/offer-sofa1@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <h3 class="card__title card__title_margin_bottom">
+                      <a href="#">
+                        Диван тканевый “Z&#8209;44”
+                      </a>
+                    </h3>
+
+                    <div class="card__price-box">
+                      <span class="card__price card__price_new">22 990 руб</span>
+                      <span class="card__price card__price_old">32 990 руб</span>
+                    </div>
+
+                    <button class="card-btn card-btn-offer" data-code="Z&#8209;44">
+                      Купить
+                    </button>
+                  </article>
+
+                  <article class="card card_offer swiper-slide">
+                    <div class="card__discount">
+                      - 600
+                    </div>
+
+                    <picture class="card__offer-picture">
+                      <source srcset="img/offer-3.webp 1x, img/offer-3@2x.webp 2x" type="image/webp">
+                      <img class="card__offer-img card__offer-img-last" src="img/offer-3.png" srcset="img/offer-3.png 1x, img/offer-3@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <h3 class="card__title card__title_margin_bottom">
+                      <a href="#">
+                        Будильник “Quartz&#8209;23”
+                      </a>
+                    </h3>
+
+                    <div class="card__price-box">
+                      <span class="card__price card__price_new">1 290 руб</span>
+                      <span class="card__price card__price_old">1 890 руб</span>
+                    </div>
+
+                    <button class="card-btn card-btn-offer" data-code="Quartz&#8209;23">
+                      Купить
+                    </button>
+                  </article>
+
+                  <article class="card card_offer swiper-slide">
+                    <div class="card__discount">
+                      - 300
+                    </div>
+
+                    <picture class="card__offer-picture">
+                      <source srcset="#" data-srcset="img/offer-4.webp 1x, img/offer-4@2x.webp 2x" type="image/webp">
+                      <img class="lazy card__offer-img" src="#" data-src="img/offer-4.png" data-srcset="img/offer-4.png 1x, img/offer-4@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <h3 class="card__title card__title_margin_bottom">
+                      <a href="#">
+                        Мини-скульптура “Oh my deer”
+                      </a>
+                    </h3>
+
+                    <div class="card__price-box">
+                      <span class="card__price card__price_new">690 руб</span>
+                      <span class="card__price card__price_old">990 руб</span>
+                    </div>
+
+                    <button class="card-btn card-btn-offer" data-code="Oh my deer">
+                      Купить
+                    </button>
+                  </article>
+
+                  <article class="card card_offer card_offer_center swiper-slide">
+                    <div class="card__discount">
+                      - 10 000
+                    </div>
+
+                    <picture class="card__offer-picture">
+                      <source srcset="#" data-srcset="img/offer-5.webp 1x, img/offer-5@2x.webp 2x" type="image/webp">
+                      <img class="lazy card__offer-img card__offer-img_center" src="#" data-src="img/offer-5.png" data-srcset="img/offer-5.png 1x, img/offer-5@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <picture class="card-sofa">
+                      <source srcset="#" data-srcset="img/offer-sofa2.webp 1x, img/offer-sofa2@2x.webp 2x" type="image/webp">
+                      <img class="lazy card-sofa-img" src="#" data-src="img/offer-sofa2.png" data-srcset="img/offer-sofa2.png 1x, img/offer-sofa2@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <h3 class="card__title card__title_margin_bottom">
+                      <a href="#">
+                        Диван вел-флок “Z&#8209;85”
+                      </a>
+                    </h3>
+
+                    <div class="card__price-box">
+                      <span class="card__price card__price_new">22 990 руб</span>
+                      <span class="card__price card__price_old">32 990 руб</span>
+                    </div>
+
+                    <button class="card-btn card-btn-offer" data-code="Z&#8209;85">
+                      Купить
+                    </button>
+                  </article>
+
+                  <article class="card card_offer swiper-slide">
+                    <div class="card__discount">
+                      - 700
+                    </div>
+
+                    <picture class="card__offer-picture">
+                      <source srcset="#" data-srcset="img/offer-6.webp 1x, img/offer-6@2x.webp 2x" type="image/webp">
+                      <img class="lazy card__offer-img card__offer-img-last" src="#" data-src="img/offer-6.png" data-srcset="img/offer-6.png 1x, img/offer-6@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <h3 class="card__title card__title_margin_bottom">
+                      <a href="#">
+                        Термометр + гидрометр “H&#8209;18”
+                      </a>
+                    </h3>
+
+                    <div class="card__price-box">
+                      <span class="card__price card__price_new">1 390 руб</span>
+                      <span class="card__price card__price_old">2 090 руб</span>
+                    </div>
+
+                    <button class="card-btn card-btn-offer" data-code="H&#8209;18">
+                      Купить
+                    </button>
+                  </article>
+                </section>
+              </div>
+            </section>
+
+            <section class="section grid-box calificaciones">
+              <h2 class="calificaciones__title title">
+                Высокий рейтинг
+              </h2>
+
+              <section class="calificaciones__list">
+                <h2 class="visually-hidden">
+                  Список карточек
+                </h2>
+
+                <article class="card">
+                  <div class="card__star">
+                    <svg width="16px" height="15px" class="card__star-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+
+                    <span class="card__star-counter">5,0</span>
+                  </div>
+
+                  <picture class="card__picture">
+                    <source srcset="#" data-srcset="img/sofa-1.webp 1x, img/sofa-1@2x.webp 2x" type="image/webp">
+                    <img class="lazy card__img" src="#" data-src="img/sofa-1.png" data-srcset="img/sofa-1.png 1x, img/sofa-1@2x.png 2x" alt="изображение">
+                  </picture>
+
+                  <div class="card__cnt-box">
+                    <h3 class="card__title">
+                      <a href="#">
+                        Диван кожаный “R&#8209;94”
+                      </a>
+                    </h3>
+
+                    <span class="card__price">94 990 руб</span>
+                  </div>
+
+                  <button class="card-btn" data-code="R&#8209;94">
+                    Купить
+                  </button>
+                </article>
+
+                <article class=" card">
+                  <div class="card__star">
+                    <svg width="16px" height="15px" class="card__star-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+
+                    <span class="card__star-counter">4,9</span>
+                  </div>
+
+                  <picture class="card__picture">
+                    <source srcset="#" data-srcset="img/sofa-2.webp 1x, img/sofa-2@2x.webp 2x" type="image/webp">
+                    <img class="lazy card__img" src="#" data-src="img/sofa-2.png" data-srcset="img/sofa-2.png 1x, img/sofa-2@2x.png 2x" alt="изображение">
+                  </picture>
+
+                  <div class="card__cnt-box">
+                    <h3 class="card__title">
+                      <a href="#">
+                        Диван апартековый “T&#8209;75”
+                      </a>
+                    </h3>
+
+                    <span class="card__price">69 990 руб</span>
+                  </div>
+
+                  <button class="card-btn" data-code="T&#8209;75">
+                    Купить
+                  </button>
+                </article>
+
+                <article class=" card">
+                  <div class="card__star">
+                    <svg width="16px" height="15px" class="card__star-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+
+                    <span class="card__star-counter">4,8</span>
+                  </div>
+
+                  <picture class="card__picture">
+                    <source srcset="#" data-srcset="img/sofa-3.webp 1x, img/sofa-3@2x.webp 2x" type="image/webp">
+                    <img class="lazy card__img" src="#" data-src="img/sofa-3.png" data-srcset="img/sofa-3.png 1x, img/sofa-3@2x.png 2x" alt="изображение">
+                  </picture>
+
+                  <div class="card__cnt-box">
+                    <h3 class="card__title">
+                      <a href="#">
+                        Диван тканевый “D&#8209;31”
+                      </a>
+                    </h3>
+
+                    <span class="card__price">28 490 руб</span>
+                  </div>
+
+                  <button class="card-btn" data-code="D&#8209;31">
+                    Купить
+                  </button>
+                </article>
+
+                <article class=" card">
+                  <div class="card__star">
+                    <svg width="16px" height="15px" class="card__star-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+
+                    <span class="card__star-counter">4,8</span>
+                  </div>
+
+                  <picture class="card__picture">
+                    <source srcset="#" data-srcset="img/sofa-4.webp 1x, img/sofa-4@2x.webp 2x" type="image/webp">
+                    <img class="lazy card__img" src="#" data-src="img/sofa-4.png" data-srcset="img/sofa-4.png 1x, img/sofa-4@2x.png 2x" alt="изображение">
+                  </picture>
+
+                  <div class="card__cnt-box">
+                    <h3 class="card__title">
+                      <a href="#">
+                        Диван велюровый “Y&#8209;68”
+                      </a>
+                    </h3>
+
+                    <span class="card__price">22 990 руб</span>
+                  </div>
+
+                  <button class="card-btn" data-code="Y&#8209;68">
+                    Купить
+                  </button>
+                </article>
+
+                <article class=" card">
+                  <div class="card__star">
+                    <svg width="16px" height="15px" class="card__star-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+
+                    <span class="card__star-counter">4,8</span>
+                  </div>
+
+                  <picture class="card__picture">
+                    <source srcset="#" data-srcset="img/sofa-5.webp 1x, img/sofa-5@2x.webp 2x" type="image/webp">
+                    <img class="lazy card__img" src="#" data-src="img/sofa-5.png" data-srcset="img/sofa-5.png 1x, img/sofa-5@2x.png 2x" alt="изображение">
+                  </picture>
+
+                  <div class="card__cnt-box">
+                    <h3 class="card__title">
+                      <a href="#">
+                        Диван из&nbsp;шинила “W&#8209;95”
+                      </a>
+                    </h3>
+
+                    <span class="card__price">22 990 руб</span>
+                  </div>
+
+                  <button class="card-btn" data-code="W&#8209;95">
+                    Купить
+                  </button>
+                </article>
+
+                <article class=" card">
+                  <div class="card__star">
+                    <svg width="16px" height="15px" class="card__star-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+
+                    <span class="card__star-counter">4,8</span>
+                  </div>
+
+                  <picture class="card__picture">
+                    <source srcset="#" data-srcset="img/sofa-6.webp 1x, img/sofa-6@2x.webp 2x" type="image/webp">
+                    <img class="lazy card__img" src="#" data-src="img/sofa-6.png" data-srcset="img/sofa-6.png 1x, img/sofa-6@2x.png 2x" alt="изображение">
+                  </picture>
+
+                  <div class="card__cnt-box">
+                    <h3 class="card__title">
+                      <a href="#">
+                        Диван флоковый “G&#8209;41”
+                      </a>
+                    </h3>
+
+                    <span class="card__price">17 990 руб</span>
+                  </div>
+
+                  <button class="card-btn" data-code="G&#8209;41">
+                    Купить
+                  </button>
+                </article>
+
+                <article class=" card">
+                  <div class="card__star">
+                    <svg width="16px" height="15px" class="card__star-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+
+                    <span class="card__star-counter">4,8</span>
+                  </div>
+
+                  <picture class="card__picture">
+                    <source srcset="#" data-srcset="img/sofa-7.webp 1x, img/sofa-7@2x.webp 2x" type="image/webp">
+                    <img class="lazy card__img" src="#" data-src="img/sofa-7.png" data-srcset="img/sofa-7.png 1x, img/sofa-7@2x.png 2x" alt="изображение">
+                  </picture>
+
+                  <div class="card__cnt-box">
+                    <h3 class="card__title">
+                      <a href="#">
+                        Диван шиниловый “V&#8209;43”
+                      </a>
+                    </h3>
+
+                    <span class="card__price">19 990 руб</span>
+                  </div>
+
+                  <button class="card-btn" data-code="V&#8209;43">
+                    Купить
+                  </button>
+                </article>
+
+                <article class=" card">
+                  <div class="card__star">
+                    <svg width="16px" height="15px" class="card__star-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+
+                    <span class="card__star-counter">4,7</span>
+                  </div>
+
+                  <picture class="card__picture">
+                    <source srcset="#" data-srcset="img/sofa-8.webp 1x, img/sofa-8@2x.webp 2x" type="image/webp">
+                    <img class="lazy card__img" src="#" data-src="img/sofa-8.png" data-srcset="img/sofa-8.png 1x, img/sofa-8@2x.png 2x" alt="изображение">
+                  </picture>
+
+                  <div class="card__cnt-box">
+                    <h3 class="card__title">
+                      <a href="#">
+                        Диван велюровый “S&#8209;99”
+                      </a>
+                    </h3>
+
+                    <span class="card__price">19 990 руб</span>
+                  </div>
+
+                  <button class="card-btn" data-code="S&#8209;99">
+                    Купить
+                  </button>
+                </article>
+
+                <article class=" card-hidden card">
+                  <div class="card__star">
+                    <svg width="16px" height="15px" class="card__star-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+
+                    <span class="card__star-counter">4,7</span>
+                  </div>
+
+                  <picture class="card__picture">
+                    <source srcset="#" data-srcset="img/sofa-9.webp 1x, img/sofa-9@2x.webp 2x" type="image/webp">
+                    <img class="lazy card__img" src="#" data-src="img/sofa-9.png" data-srcset="img/sofa-9.png 1x, img/sofa-9@2x.png 2x" alt="изображение">
+                  </picture>
+
+                  <div class="card__cnt-box">
+                    <h3 class="card__title">
+                      <a href="#">
+                        Диван из кожзама “F&#8209;85”
+                      </a>
+                    </h3>
+
+                    <span class="card__price">26 990 руб</span>
+                  </div>
+
+                  <button class="card-btn" data-code="F&#8209;85">
+                    Купить
+                  </button>
+                </article>
+
+                <article class=" card-hidden card">
+                  <div class="card__star">
+                    <svg width="16px" height="15px" class="card__star-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+
+                    <span class="card__star-counter">4,6</span>
+                  </div>
+
+                  <picture class="card__picture">
+                    <source srcset="#" data-srcset="img/sofa-10.webp 1x, img/sofa-10@2x.webp 2x" type="image/webp">
+                    <img class="lazy card__img" src="#" data-src="img/sofa-10.png" data-srcset="img/sofa-10.png 1x, img/sofa-10@2x.png 2x" alt="изображение">
+                  </picture>
+
+                  <div class="card__cnt-box">
+                    <h3 class="card__title">
+                      <a href="#">
+                        Диван флоковый “H&#8209;64”
+                      </a>
+                    </h3>
+
+                    <span class="card__price">25 990 руб</span>
+                  </div>
+
+                  <button class="card-btn" data-code="H&#8209;64">
+                    Купить
+                  </button>
+                </article>
+
+                <article class=" card-hidden card">
+                  <div class="card__star">
+                    <svg width="16px" height="15px" class="card__star-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+
+                    <span class="card__star-counter">4,6</span>
+                  </div>
+
+                  <picture class="card__picture">
+                    <source srcset="#" data-srcset="img/sofa-11.webp 1x, img/sofa-11@2x.webp 2x" type="image/webp">
+                    <img class="lazy card__img" src="#" data-src="img/sofa-11.png" data-srcset="img/sofa-11.png 1x, img/sofa-11@2x.png 2x" alt="изображение">
+                  </picture>
+
+                  <div class="card__cnt-box">
+                    <h3 class="card__title">
+                      <a href="#">
+                        Диван флоковый “H&#8209;58”
+                      </a>
+                    </h3>
+
+                    <span class="card__price">23 990 руб</span>
+                  </div>
+
+                  <button class="card-btn" data-code="H&#8209;58">
+                    Купить
+                  </button>
+                </article>
+
+                <article class=" card-hidden card">
+                  <div class="card__star">
+                    <svg width="16px" height="15px" class="card__star-icon">
+                      <use xlink:href="img/sprite.svg#star"></use>
+                    </svg>
+
+                    <span class="card__star-counter">4,6</span>
+                  </div>
+
+                  <picture class="card__picture">
+                    <source srcset="#" data-srcset="img/sofa-12.webp 1x, img/sofa-12@2x.webp 2x" type="image/webp">
+                    <img class="lazy card__img" src="#" data-src="img/sofa-12.png" data-srcset="img/sofa-12.png 1x, img/sofa-12@2x.png 2x" alt="изображение">
+                  </picture>
+
+                  <div class="card__cnt-box">
+                    <h3 class="card__title">
+                      <a href="#">
+                        Диван из кожзама “R&#8209;43”
+                      </a>
+                    </h3>
+
+                    <span class="card__price">33 990 руб</span>
+                  </div>
+
+                  <button class="card-btn" data-code="R&#8209;43">
+                    Купить
+                  </button>
+                </article>
+              </section>
+
+              <div class="calificaciones__last-box">
+                <button class="add-card btn">
+                  Смотреть больше товаров
+                </button>
+              </div>
+            </section>
+
+            <section class="section ocsford">
+              <h2 class="visually-hidden">
+                Оксфорд
+              </h2>
+              <section class="ocsford__background grid-box">
+                <div class="ocsford__container">
+                  <h3 class="ocsford__title">
+                    Оксфорд 1950
+                  </h3>
+
+                  <p class="ocsford__description">
+                    Новая коллекция изысканных кресел
+                  </p>
+
+                  <button class="btn">
+                    Ознакомиться
+                  </button>
+                </div>
+              </section>
+            </section>
+
+            <section id="top-category" class="section grid-box category">
+              <h2 class="visually-hidden">
+                Категории
+              </h2>
+
+              <section class="category__container">
+                <h3 class="category__title title">
+                  Топ категории
+                </h3>
+
+                <ul class="category__list">
+                  <li class="category__item category__item-big category__item-one">
+                    <ul class="category__nav">
+                      <li class="category__nav-item">
+                        <a class="category__nav-link" href="catalog.html" data-parent="Диваны" data-category="Прямые диваны">
+                          Прямые
+                        </a>
+                      </li>
+
+                      <li class="category__nav-item">
+                        <a class="category__nav-link" href="catalog.html" data-parent="Диваны" data-category="Угловые диваны">
+                          Угловые
+                        </a>
+                      </li>
+
+                      <li class="category__nav-item">
+                        <a class="category__nav-link" href="catalog.html" data-parent="Диваны" data-category="Модульные диваны">
+                          Модульные
+                        </a>
+                      </li>
+                    </ul>
+
+                    <h3 class="category__item-title-first">
+                      Диваны
+                      <a class="category__link-hidden" href="#" aria-label="каталог">
+                        <span class="go-catalog-icon">
+                          <svg width="9px" height="9px" class="go-catalog-svg my-icon my-icon-arrow" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#arrowRight"></use>
+                          </svg>
+                        </span>
+                      </a>
+                    </h3>
+
+                    <picture class="category__picture">
+                      <source srcset="#" data-srcset="img/sofas320.webp 1x, img/sofas320@2x.webp 2x" type="image/webp" media="(max-width: 400px)">
+                      <source srcset="#" data-srcset="img/sofas320.png 1x, img/sofas320@2x.png 2x" type="image/png" media="(max-width: 400px)">
+                      <source srcset="#" data-srcset="img/sofas.webp 1x, img/sofas@2x.webp 2x" type="image/webp">
+                      <img class="lazy category__img" src="#" data-src="img/sofas.png" data-srcset="img/sofas.png 1x, img/sofas@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <a class="category__link" href="catalog.html" data-category="Диваны">
+                      <span class="go-catalog-text">
+                        В каталог
+                      </span>
+
+                      <span class="go-catalog-icon">
+                        <svg width="9px" height="9px" class="go-catalog-svg my-icon my-icon-arrow" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#arrowRight"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="category__item category__item-big category__item-two">
+                    <ul class="category__nav">
+                      <li class="category__nav-item">
+                        <a class="category__nav-link" href="catalog.html" data-parent="Кресла" data-category="Мягкие кресла">
+                          Мягкие
+                        </a>
+                      </li>
+
+                      <li class="category__nav-item">
+                        <a class="category__nav-link" href="catalog.html" data-parent="Кресла" data-category="Кресла-кровати">
+                          Кресла-кровати
+                        </a>
+                      </li>
+                    </ul>
+
+                    <h3 class="category__item-title">
+                      Кресла
+                      <a class="category__link-hidden" href="#" aria-label="каталог">
+                        <span class="go-catalog-icon">
+                          <svg width="9px" height="9px" class="go-catalog-svg my-icon my-icon-arrow" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#arrowRight"></use>
+                          </svg>
+                        </span>
+                      </a>
+                    </h3>
+
+                    <picture class="category__picture">
+                      <source srcset="#" data-srcset="img/armchairs320.webp 1x, img/armchairs320@2x.webp 2x" type="image/webp" media="(max-width: 400px)">
+                      <source srcset="#" data-srcset="img/armchairs320.png 1x, img/armchairs320@2x.png 2x" type="image/png" media="(max-width: 400px)">
+                      <source srcset="#" data-srcset="img/armchairs1024.webp 1x, img/armchairs1024@2x.webp 2x" type="image/webp" media="(max-width: 1024px)">
+                      <source srcset="#" data-srcset="img/armchairs1024.png 1x, img/armchairs1024@2x.png 2x" type="image/png" media="(max-width: 1024px)">
+                      <source srcset="#" data-srcset="img/armchairs.webp 1x, img/armchairs@2x.webp 2x" type="image/webp">
+                      <img class="lazy category__img" src="#" data-src="img/armchairs.png" data-srcset="img/armchairs.png 1x, img/armchairs@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <a id="category__link" class="category__link" href="catalog.html" data-category="Кресла">
+                      <span class="go-catalog-text">
+                        В каталог
+                      </span>
+
+                      <span class="go-catalog-icon">
+                        <svg width="9px" height="9px" class="go-catalog-svg my-icon my-icon-arrow" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#arrowRight"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="category__item category__item-middle category__item-three">
+                    <ul class="category__nav">
+                      <li class="category__nav-item">
+                        <a class="category__nav-link" href="catalog.html" data-parent="Кровати" data-category="Односпальные кровати">
+                          Односпальные
+                        </a>
+                      </li>
+
+                      <li class="category__nav-item">
+                        <a class="category__nav-link" href="catalog.html" data-parent="Кровати" data-category="Двуспальные кровати">
+                          Двуспальные
+                        </a>
+                      </li>
+                    </ul>
+
+                    <h3 class="category__item-title">
+                      Кровати
+                      <a class="category__link-hidden" href="#" aria-label="каталог">
+                        <span class="go-catalog-icon">
+                          <svg width="9px" height="9px" class="go-catalog-svg my-icon my-icon-arrow" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#arrowRight"></use>
+                          </svg>
+                        </span>
+                      </a>
+                    </h3>
+
+                    <picture class="category__picture">
+                      <source srcset="#" data-srcset="img/beds320.webp 1x, img/beds320@2x.webp 2x" type="image/webp" media="(max-width: 400px)">
+                      <source srcset="#" data-srcset="img/beds320.png 1x, img/beds320@2x.png 2x" type="image/png" media="(max-width: 400px)">
+                      <source srcset="#" data-srcset="img/beds1024.webp 1x, img/beds1024@2x.webp 2x" type="image/webp" media="(max-width: 1024px)">
+                      <source srcset="#" data-srcset="img/beds1024.png 1x, img/beds1024@2x.png 2x" type="image/png" media="(max-width: 1024px)">
+                      <source srcset="#" data-srcset="img/beds.webp 1x, img/beds@2x.webp 2x" type="image/webp">
+                      <img class="lazy category__img" src="#" data-src="img/beds.png" data-srcset="img/beds.png 1x, img/beds@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <a class="category__link" href="catalog.html" data-category="Кровати">
+                      <span class="go-catalog-text">
+                        В каталог
+                      </span>
+
+                      <span class="go-catalog-icon">
+                        <svg width="9px" height="9px" class="go-catalog-svg my-icon my-icon-arrow" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#arrowRight"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="category__item category__item-middle category__item-four">
+                    <ul class="category__nav category__nav-dressers">
+                      <li class="category__nav-item">
+                        <a class="category__nav-link" href="catalog.html" data-parent="Тумбы и комоды" data-category="Тумбы">
+                          Тумбы
+                        </a>
+                      </li>
+
+                      <li class="category__nav-item">
+                        <a class="category__nav-link" href="catalog.html" data-parent="Тумбы и комоды" data-category="Комоды">
+                          Комоды
+                        </a>
+                      </li>
+                    </ul>
+
+                    <h3 class="category__item-title">
+                      Тумбы и&nbsp;комоды
+                      <a class="category__link-hidden" href="#" aria-label="каталог">
+                        <span class="go-catalog-icon">
+                          <svg width="9px" height="9px" class="go-catalog-svg my-icon my-icon-arrow" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#arrowRight"></use>
+                          </svg>
+                        </span>
+                      </a>
+                    </h3>
+
+                    <picture class="category__picture">
+                      <source srcset="#" data-srcset="img/dressers320.webp 1x, img/dressers320@2x.webp 2x" type="image/webp" media="(max-width: 400px)">
+                      <source srcset="#" data-srcset="img/dressers320.png 1x, img/dressers320@2x.png 2x" type="image/png" media="(max-width: 400px)">
+                      <source srcset="#" data-srcset="img/dressers1024.webp 1x, img/dressers1024@2x.webp 2x" type="image/webp" media="(max-width: 1024px)">
+                      <source srcset="#" data-srcset="img/dressers1024.png 1x, img/dressers1024@2x.png 2x" type="image/png" media="(max-width: 1024px)">
+                      <source srcset="#" data-srcset="img/dressers.webp 1x, img/dressers@2x.webp 2x" type="image/webp">
+                      <img class="lazy category__img" src="#" data-src="img/dressers.png" data-srcset="img/dressers.png 1x, img/dressers@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <a class="category__link" href="catalog.html" data-category="Тумбы и комоды">
+                      <span class="go-catalog-text">
+                        В каталог
+                      </span>
+
+                      <span class="go-catalog-icon">
+                        <svg width="9px" height="9px" class="go-catalog-svg my-icon my-icon-arrow" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#arrowRight"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+
+                  <li class="category__item category__item-middle category__item-five">
+                    <ul class="category__nav category__nav-chairs">
+                      <li class="category__nav-item">
+                        <a class="category__nav-link" href="catalog.html" data-parent="Стулья" data-category="Деревянные стулья">
+                          Деревянные
+                        </a>
+                      </li>
+
+                      <li class="category__nav-item">
+                        <a class="category__nav-link" href="catalog.html" data-parent="Стулья" data-category="Металлокаркас стулья">
+                          Металлокаркас
+                        </a>
+                      </li>
+                    </ul>
+
+                    <h3 class="category__item-title">
+                      Стулья
+                      <a class="category__link-hidden" href="#" aria-label="каталог">
+                        <span class="go-catalog-icon">
+                          <svg width="9px" height="9px" class="go-catalog-svg my-icon my-icon-arrow" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#arrowRight"></use>
+                          </svg>
+                        </span>
+                      </a>
+                    </h3>
+
+                    <picture class="category__picture">
+                      <source srcset="#" data-srcset="img/chairs320.webp 1x, img/chairs320@2x.webp 2x" type="image/webp" media="(max-width: 400px)">
+                      <source srcset="#" data-srcset="img/chairs320.png 1x, img/chairs320@2x.png 2x" type="image/png" media="(max-width: 400px)">
+                      <source srcset="#" data-srcset="img/chairs1024.webp 1x, img/chairs1024@2x.webp 2x" type="image/webp" media="(max-width: 1024px)">
+                      <source srcset="#" data-srcset="img/chairs1024.png 1x, img/chairs1024@2x.png 2x" type="image/png" media="(max-width: 1024px)">
+                      <source srcset="#" data-srcset="img/chairs.webp 1x, img/chairs@2x.webp 2x" type="image/webp">
+                      <img class="lazy category__img" src="#" data-src="img/chairs.png" data-srcset="img/chairs.png 1x, img/chairs@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <a class="category__link" href="catalog.html" data-category="Стулья" data-block="block">
+                      <span class="go-catalog-text">
+                        В каталог
+                      </span>
+
+                      <span class="go-catalog-icon">
+                        <svg width="9px" height="9px" class="go-catalog-svg my-icon my-icon-arrow" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#arrowRight"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </section>
+
+            <section class="section grid-box useful">
+              <div class="swiper useful__swiper">
+                <div class="swiper-box-top">
+                  <h2 class="title">
+                    Полезное
+                  </h2>
+
+                  <div class="swiper-box-btn-container">
+                    <div class="swiper-button-prev swiper-box-btn-prev">
+                      <svg width="12px" height="12px" class="swiper-box-icon">
+                        <use xlink:href="img/sprite.svg#arrowLeft"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-button-next swiper-box-btn-next">
+                      <svg width="12px" height="12px" class="swiper-box-icon">
+                        <use xlink:href="img/sprite.svg#arrowRight"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- Additional required wrapper -->
+                <section class="swiper-wrapper useful__wrapper">
+                  <!-- Slides -->
+                  <h2 class="visually-hidden">
+                    Список статей
+                  </h2>
+
+                  <article class="useful__slide swiper-slide">
+                    <picture class="useful__picture">
+                      <source srcset="#" data-srcset="img/useful-1.webp 1x, img/useful-1@2x.webp 2x" type="image/webp">
+                      <img class="lazy useful__img" src="#" data-src="img/useful-1.jpg" data-srcset="img/useful-1.png 1x, img/useful-1@2x.png 2x" alt="изображение">
+                    </picture>
+                    <div class="useful__content">
+                      <h3 class="useful__subtitle">
+                        И нет сомнений, что сделанные на базе интернет&#8209;аналитики выводы представляют собой не что иное?
+                      </h3>
+
+                      <button class="card-btn card-btn-useful">
+                        Читать
+                      </button>
+                    </div>
+                  </article>
+
+                  <article class="useful__slide swiper-slide">
+                    <picture class="useful__picture">
+                      <source srcset="#" data-srcset="img/useful-2.webp 1x, img/useful-2@2x.webp 2x" type="image/webp">
+                      <img class="lazy useful__img" src="#" data-src="img/useful-2.jpg" data-srcset="img/useful-2.png 1x, img/useful-2@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <div class="useful__content">
+                      <h3 class="useful__subtitle">
+                        Как принято считать, некоторые особенности приносят несомненную пользу обществу?
+                      </h3>
+
+                      <button class="card-btn card-btn-useful">
+                        Читать
+                      </button>
+                    </div>
+                  </article>
+
+                  <article class="useful__slide swiper-slide">
+                    <picture class="useful__picture">
+                      <source srcset="#" data-srcset="img/useful-3.webp 1x, img/useful-3@2x.webp 2x" type="image/webp">
+                      <img class="lazy useful__img" src="#" data-src="img/useful-3.jpg" data-srcset="img/useful-3.png 1x, img/useful-3@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <div class="useful__content">
+                      <h3 class="useful__subtitle">
+                        Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?
+                      </h3>
+
+                      <button class="card-btn card-btn-useful">
+                        Читать
+                      </button>
+                    </div>
+                  </article>
+
+                  <article class="useful__slide swiper-slide">
+                    <picture class="useful__picture">
+                      <source srcset="#" data-srcset="img/useful-4.webp 1x, img/useful-4@2x.webp 2x" type="image/webp">
+                      <img class="lazy useful__img" src="#" data-src="img/useful-4.jpg" data-srcset="img/useful-4.png 1x, img/useful-4@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <div class="useful__content">
+                      <h3 class="useful__subtitle">
+                        Прежде всего, консультация с широким активом однозначно фиксирует необходимость распределения?
+                      </h3>
+
+                      <button class="card-btn card-btn-useful">
+                        Читать
+                      </button>
+                    </div>
+                  </article>
+
+                  <article class="useful__slide swiper-slide">
+                    <picture class="useful__picture">
+                      <source srcset="#" data-srcset="img/useful-5.webp 1x, img/useful-5@2x.webp 2x" type="image/webp">
+                      <img class="lazy useful__img" src="#" data-src="img/useful-5.jpg" data-srcset="img/useful-5.png 1x, img/useful-5@2x.png 2x" alt="изображение">
+                    </picture>
+
+                    <div class="useful__content">
+                      <h3 class="useful__subtitle">
+                        Как принято считать, некоторые особенности приносят несомненную пользу обществу?
+                      </h3>
+
+                      <button class="card-btn card-btn-useful">
+                        Читать
+                      </button>
+                    </div>
+                  </article>
+                </section>
+              </div>
+            </section>
+
+            <section class="section contacts contacts-cnt grid-box">
+              <div class="centered contacts__container">
+                <div class="contacts__content">
+                  <h2 class="contacts__title title">
+                    Мы всегда вам рады!
+                  </h2>
+
+                  <p class="contacts__paragraph">
+                    Безусловно, новая модель организационной деятельности в&nbsp;значительной степени обусловливает важность распределения внутренних резервов и&nbsp;ресурсов.
+                    <span class="contacts__tooltip tooltip">
+                      <button class="tooltip__btn" aria-label="тултип">?</button>
+                      <span class="tooltip__text">
+                        Реплицированные с зарубежных источников, исследования формируют глобальную сеть.
+                      </span>
+                    </span>
+                  </p>
+
+                  <form id="form" class="contacts__form" action="sendmail.php" enctype="multipart/form-data" method="POST" aria-label="Оставить заявку">
+                    <div class="form-response">
+                      <span>
+                        Отправка...
+                      </span>
+                    </div>
+
+                      <label class="contacts__label">
+                          <input class="my-input-custom" name="name" type="text" placeholder="Как вас зовут?" aria-label="Как вас зовут?" data-validate-field="name" maxlength="20">
+                      </label>
+
+                      <label class="contacts__label">
+                          <input class="my-input-custom" name="tel" type="tel" placeholder="Ваш телефон" aria-label="Ваш телефон" data-validate-field="tel" data-validate-rules="phone">
+                      </label>
+
+                      <label class="contacts__label">
+                        <input class="my-input-custom" name="email" type="email" placeholder="Ваш e-mail" aria-label="Ваш e-mail" data-validate-field="email">
+                      </label>
+
+                      <button class="btn send-form-btn">Отправить</button>
+
+                      <div class="contacts__checkbox-wrapper">
+                        <label class="my-label-checkbox">
+                          <input class="my-checkbox" type="checkbox" name="checkbox" data-validate-field="checkbox" required checked>
+                          <span class="my-checkbox-custom"></span>
+
+                          <span>Принимаю</span>
+                          
+                          <a class="contacts__checkbox-link" href="#">
+                            пользовательское соглашение
+                          </a>
+                        </label>
+                      </div>
+                  </form>
+                </div>
+
+                <picture class="contacts__picture">
+                  <source srcset="#" data-srcset="img/contacts768.webp 1x, img/contacts768@2x.webp 2x" type="image/webp" media="(max-width: 850px)">
+                  <source srcset="#" data-srcset="img/contacts768.jpg 1x, img/contacts768@2x.jpg 2x" type="image/jpg" media="(max-width: 850px)">
+                  <source srcset="#" data-srcset="img/contacts.webp 1x, img/contacts@2x.webp 2x" type="image/webp">
+                  <img class="lazy contacts__img" src="#" data-src="img/contacts.jpg" data-srcset="img/contacts.jpg 1x, img/contacts@2x.jpg 2x" alt="изображение">
+                </picture>
+              </div>
+            </section>
+        </main>
+
+        <footer class="footer grid-box">
+          <h2 class="visually-hidden">
+            подвал
+          </h2>
+
+          <div class="footer__content">
+            <div class="footer__left">
+              <picture class="footer__logo">
+                <source srcset="#" data-srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
+                <img class="lazy footer__logo-img" src="#" data-src="img/logo.png" data-srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="логотип">
+              </picture>
+
+              <ul class="social">
+                <li class="social__item">
+                  <a href="#" class="social__link" aria-label="facebook">
+                    <svg width="30px" height="30px" class="social__svg" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#fb"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social__item">
+                  <a href="#" class="social__link" aria-label="vk">
+                    <svg width="30px" height="30px" class="social__svg" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="social__item">
+                  <a href="#" class="social__link" aria-label="instagram">
+                    <svg width="30px" height="30px" class="social__svg" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#insta"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="footer__right">
+              <li class="footer__right-child">
+                <h2 class="footer__subtitle">О нас</h2>
+                
+                <ul class="footer__lits">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">О компании</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Блог</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="footer__right-child">
+                <h2 class="footer__subtitle">Услуги</h2>
+
+                <ul class="footer__lits">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Доставка</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Рассрочка и кредит</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Сборка и установка</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="footer__right-child">
+                <h2 class="footer__subtitle">Связь с нами</h2>
+
+                <ul class="footer__lits">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Обратная связь</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Контакты</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="footer__right-child">
+                <h2 class="footer__subtitle">Сотрудничество</h2>
+                
+                <ul class="footer__lits">
+                  <li class="footer__item">
+                    <a href="cooperation.html" class="footer__link">Поставщикам</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="cooperation.html" class="footer__link">Оптовикам</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="cooperation.html" class="footer__link">Карьера</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__bottom">
+            SDP®&nbsp;&nbsp;&nbsp;2011-2021
+          </div>
+        </footer>
+    </div>
+  </body>
+</html>
