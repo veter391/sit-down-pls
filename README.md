@@ -5,4 +5,5 @@ I hope you'll like this web)
 
 ## Tools: Gulp, html, Css(Sass), Js and JQuery, Php, svg-sprite, webp etc...
 
-[Demo](veter391.github.io/sit-down-pls/)
+[Demo](https://veter391.github.io/sit-down-pls/)
+
